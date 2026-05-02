@@ -55,7 +55,8 @@ img.logo {
 img.logo[src*="menu.svg"] {
     width: 24px;
     height: 24px;
-    filter: invert(1); /* Assuming it might need to be white on dark bg */
+    filter: invert(1);
+    /* Assuming it might need to be white on dark bg */
 }
 
 img.logo[src*="github.svg"] {
@@ -92,6 +93,10 @@ img.logo[src*="github.svg"] {
     font-size: 14px;
     width: 240px;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 
