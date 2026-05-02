@@ -56,7 +56,6 @@ img.logo[src*="menu.svg"] {
     width: 24px;
     height: 24px;
     filter: invert(1);
-    /* Assuming it might need to be white on dark bg */
 }
 
 img.logo[src*="github.svg"] {
@@ -93,12 +92,13 @@ img.logo[src*="github.svg"] {
     font-size: 14px;
     width: 240px;
     cursor: pointer;
+}
 
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
+    .search-input {
         display: none;
     }
 }
-
 
 .profile-icon {
     width: 24px;
@@ -158,7 +158,7 @@ img.logo[src*="github.svg"] {
 }
 
 .tab-icon {
-    fill: #6e7781; /* GitHub's standard secondary icon color */
+    fill: #6e7781;
     width: 14px;
     height: 14px;
     flex-shrink: 0;
@@ -206,7 +206,9 @@ img.logo[src*="github.svg"] {
 }
 
 .dropdown-item {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 8px 16px;
     color: var(--text-color);
     text-decoration: none;
@@ -218,7 +220,6 @@ img.logo[src*="github.svg"] {
     background-color: #f6f8fa;
 }
 
-/* Responsiveness */
 .mobile-only {
     display: none;
 }
@@ -398,8 +399,27 @@ img.logo[src*="github.svg"] {
     border-radius: 50%;
 }
 
-/* Mobile Responsiveness for Overview */
+/* Responsiveness */
 @media (max-width: 768px) {
+    .desktop-only {
+        display: none !important;
+    }
+
+    .mobile-only {
+        display: flex !important;
+    }
+
+    .tab-container {
+        padding: 0 8px;
+        gap: 4px;
+        justify-content: flex-start;
+    }
+
+    .tab-item {
+        padding: 8px 8px;
+        font-size: 13px;
+    }
+
     .overview-container {
         flex-direction: column;
         padding: 16px;
