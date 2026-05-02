@@ -116,3 +116,127 @@ img.logo[src*="github.svg"] {
     height: 100%;
     object-fit: cover;
 }
+
+/* Tab Navigation Styles */
+.tab-nav {
+    border-bottom: 1px solid var(--border-color);
+    margin-top: 24px;
+    background-color: var(--bg-color);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.tab-container {
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+    gap: 8px;
+}
+
+.tab-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 14px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.2s;
+    white-space: nowrap;
+}
+
+.tab-item:hover {
+    border-bottom-color: #d0d7de;
+}
+
+.tab-item.active {
+    font-weight: 600;
+    border-bottom-color: #fd8c73;
+}
+
+.tab-icon {
+    fill: #6e7781; /* GitHub's standard secondary icon color */
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    transition: fill 0.2s;
+}
+
+.tab-item:hover .tab-icon {
+    fill: var(--text-color);
+}
+
+.tab-item.active .tab-icon {
+    fill: var(--text-color);
+}
+
+.count {
+    background-color: rgba(175, 184, 193, 0.2);
+    padding: 0 6px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+.more-tab {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    box-shadow: 0 8px 24px rgba(140, 149, 159, 0.2);
+    width: 160px;
+    z-index: 100;
+    margin-top: 4px;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 8px 16px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.dropdown-item:hover {
+    background-color: #f6f8fa;
+}
+
+/* Responsiveness */
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+    .mobile-only {
+        display: flex;
+    }
+    .tab-container {
+        padding: 0 8px;
+        gap: 4px;
+        justify-content: flex-start;
+    }
+    .tab-item {
+        padding: 8px 8px;
+        font-size: 13px;
+    }
+    }

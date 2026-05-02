@@ -15,13 +15,53 @@
                 <div class="logo">Shreedhar</div>
             </div>
             <div class="header-right">
-                <input disabled type="text" placeholder="Search or jump to..." class="search-input">
+                <input disabled type="text" placeholder="Type / to search" class="search-input">
                 <div class="profile-icon">
                     <img src="assets/images/avatar.jpeg" alt="">
                 </div>
             </div>
         </div>
     </header>
+
+    <nav class="tab-nav">
+        <div class="tab-container">
+            <a href="#overview" class="tab-item active">
+                <img src="assets/images/tabs/overview.svg" alt="">
+                <span>Overview</span>
+            </a>
+            <a href="#repositories" class="tab-item">
+                <img src="assets/images/tabs/repositery.svg" alt="">
+                <span>Repositories</span>
+                <span class="count" id="repo-count">0</span>
+            </a>
+            <a href="#projects" class="tab-item desktop-only">
+                <img src="assets/images/tabs/project.svg" alt="">
+                <span>Projects</span>
+            </a>
+            <a href="#packages" class="tab-item desktop-only">
+                <img src="assets/images/tabs/pakages.svg" alt="">
+                
+                <span>Packages</span>
+            </a>
+            <a href="#stars" class="tab-item desktop-only">
+               <img src="assets/images/tabs/star.svg" alt="">
+                <span>Stars</span>
+                <span class="count" id="star-count">0</span>
+            </a>
+            <div class="tab-item mobile-only more-tab" id="more-tab-btn">
+                <span>More</span>
+                <svg class="tab-icon" viewBox="0 0 16 16" width="16" height="16"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg>
+                <div class="dropdown-menu" id="more-dropdown">
+                    <a href="#projects" class="dropdown-item">Projects</a>
+                    <a href="#packages" class="dropdown-item">Packages</a>
+                    <a href="#stars" class="dropdown-item">
+                        <span>Stars</span>
+                        <span class="count" id="star-count-mobile">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <div id="app">
         <main style="padding: 32px; max-width: 1280px; margin: 0 auto;">
