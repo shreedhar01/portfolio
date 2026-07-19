@@ -1,54 +1,54 @@
 # Shreedhar's Portfolio
 
-A clean, professional, and interactive personal portfolio website that mirrors the aesthetic and functional simplicity of GitHub.
+A modern, professional personal portfolio website for Shreedhar — Software Developer and creator of [ShroudChat](https://shroudchat.com).
 
-**Live Link:** [shreedhar.dev](https://shreedhar.dev)
+**Live:** [shreedhar.dev](https://shreedhar.dev)
 
-## 🚀 Overview
+## ✨ Highlights
 
-This project is a personal portfolio designed to serve as a central hub for showcasing projects, skills. It utilizes core web technologies to achieve a "GitHub-like" design system, focusing on clean layouts and interactive elements.
-
-## ✨ Features
-
-- **GitHub-inspired UI:** A familiar and professional aesthetic modeled after GitHub's user profiles.
-- **Responsive Design:** Optimized for a great viewing experience across mobile, tablet, and desktop devices.
+- **Modern professional design** — clean dark/light themed single-page layout with a privacy/developer aesthetic.
+- **Featured product** — ShroudChat, a privacy-first, on-device AI chat app, showcased with its features and a phone mockup.
+- **Responsive & accessible** — works across mobile, tablet, and desktop; scroll-reveal animations, sticky nav, active-link spy, and a theme toggle.
+- **Live data** — pulls the public repo count from the GitHub API.
 
 ## 🛠️ Tech Stack
 
-- **HTML5:** Semantic structure for accessibility and SEO.
-- **CSS3:** Custom styles using Vanilla CSS for a lightweight and precise design.
-- **JavaScript (ES6+):** Dynamic interactivity and tab management.
+- **HTML5** — semantic structure.
+- **CSS3 (Vanilla)** — design tokens, themes, and layout. No frameworks.
+- **JavaScript (ES6+)** — interactivity (nav, theme toggle, scroll reveal, GitHub data).
+- **Fonts** — Inter & JetBrains Mono (Google Fonts), with system fallbacks.
 
 ## 📂 Directory Structure
 
 ```text
 portfolio/
-├── assets/             # Images, fonts, and static assets
-│   └── images/         # Profile avatar, icons, and tab SVGs
-├── spec/               # Project documentation and feature specifications
-│   ├── constitution/   # Mission, Roadmap, and Tech Stack
-│   └── features/       # Feature-specific documentation
-├── src/                # Source code
-│   ├── css/            # Stylesheets
-│   └── js/             # Interactive logic
-├── index.html          # Main entry point
-└── README.md           # Project documentation
+├── assets/
+│   └── images/        # Avatar, logo, icons
+├── src/
+│   ├── css/           # Stylesheet
+│   └── js/            # Interactions
+├── index.html         # Single-page entry point
+├── CNAME              # shreedhar.dev (GitHub Pages)
+└── README.md
 ```
 
-## 🛠️ Local Development
+## 🚀 Local Development
 
-To run this project locally:
-
-1. **Clone the repository:**
+1. Clone the repository:
    ```bash
    git clone https://github.com/shreedhar01/portfolio.git
    ```
-
-2. **Navigate to the project directory:**
+2. Navigate into the project:
    ```bash
    cd portfolio
    ```
+3. Open `index.html` in your browser, or serve it:
+   ```bash
+   python3 -m http.server 8080
+   ```
+   Then visit <http://localhost:8080>.
 
-3. **Open `index.html` in your browser:**
-   - You can simply double-click the file in your file explorer.
-   - Alternatively, use an extension like "Live Server" in VS Code for a better development experience.
+## 📝 Content Notes
+
+- Currently working full-time as a **Software Developer** at **Paper Bank Solution**.
+- Building the personal side project **ShroudChat** in free time — [shroudchat.com](https://shroudchat.com).
