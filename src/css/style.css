@@ -183,8 +183,29 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .hero-visual { display: flex; flex-direction: column; align-items: center; gap: 26px; }
 .avatar-orb { position: relative; width: 200px; height: 200px; display: grid; place-items: center; }
 .avatar-img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 3px solid var(--border-strong); position: relative; z-index: 2; }
-.orb-glow { position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle, var(--accent-glow), transparent 65%); filter: blur(8px); animation: float 6s ease-in-out infinite; }
+.orb-glow { position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle, var(--accent-glow), transparent 65%); filter: blur(8px); animation: float 6s ease-in-out infinite, orb-flicker 3.5s ease-in-out infinite; }
 @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+@keyframes orb-flicker { 0%, 100% { opacity: 1; } 47% { opacity: 1; } 48% { opacity: 0.35; } 49% { opacity: 1; } 72% { opacity: 1; } 73% { opacity: 0.5; } 74% { opacity: 1; } }
+
+/* Electricity sparks layer */
+.sparks {
+    position: absolute; inset: 0; z-index: 3;
+    pointer-events: none; overflow: visible;
+}
+.spark-bolt {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    transform-origin: center; opacity: 0;
+    filter: drop-shadow(0 0 4px var(--accent)) drop-shadow(0 0 9px var(--accent-glow));
+    animation: spark-flicker 0.5s ease-out forwards;
+}
+@keyframes spark-flicker {
+    0% { opacity: 0; transform: scale(0.92); }
+    12% { opacity: 1; transform: scale(1); }
+    22% { opacity: 0.35; }
+    30% { opacity: 1; }
+    70% { opacity: 0.85; }
+    100% { opacity: 0; transform: scale(1.06); }
+}
 
 .code-card {
     margin: 0; width: 100%; max-width: 360px; background: var(--surface); border: 1px solid var(--border);
