@@ -1,370 +1,189 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shreedhar — Software Developer building ShroudChat, a privacy-first on-device AI chat app. Portfolio of projects, skills, and work.">
-    <meta name="author" content="Shreedhar">
-
-    <!-- Favicons (multi-size + ICO for Google Search) -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shreedhar Kala Magar | Software Developer</title>
+    <meta name="description" content="Portfolio of Shreedhar Kala Magar, a software developer building full-stack mobile apps and on-device AI.">
+    <meta name="author" content="Shreedhar Kala Magar">
+    <link rel="canonical" href="https://shreedhar.dev/">
+    <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="assets/images/favicon-48x48.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-    <link rel="mask-icon" href="assets/images/logo.png" color="#34d399">
-
-    <!-- Open Graph (logo shown when shared + indexed) -->
-    <meta property="og:title" content="Shreedhar — Software Developer">
-    <meta property="og:description" content="Software developer building ShroudChat — private AI on your device.">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    <meta property="og:title" content="Shreedhar Kala Magar | Software Developer">
+    <meta property="og:description" content="Full-stack mobile development and on-device AI.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://shreedhar.dev/">
     <meta property="og:image" content="https://shreedhar.dev/assets/images/og-image.png">
-    <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Shreedhar — Software Developer">
-
-    <!-- Twitter card -->
+    <meta property="og:image:alt" content="Shreedhar Kala Magar, software developer">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Shreedhar — Software Developer">
-    <meta name="twitter:description" content="Software developer building ShroudChat — private AI on your device.">
+    <meta name="twitter:title" content="Shreedhar Kala Magar | Software Developer">
+    <meta name="twitter:description" content="Full-stack mobile development and on-device AI.">
     <meta name="twitter:image" content="https://shreedhar.dev/assets/images/og-image.png">
-
-    <!-- Structured data: helps Google link the logo to this site/person -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Shreedhar",
-      "jobTitle": "Software Developer",
-      "url": "https://shreedhar.dev/",
-      "image": "https://shreedhar.dev/assets/images/og-image.png",
-      "logo": "https://shreedhar.dev/assets/images/logo.png",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Paper Bank Solution"
-      },
-      "sameAs": [
-        "https://github.com/shreedhar01",
-        "https://www.linkedin.com/in/shreedhar-kala-magar-7a66b424b"
-      ]
-    }
-    </script>
-
-    <title>Shreedhar — Software Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
+    <script src="src/js/app.js" defer></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Shreedhar Kala Magar",
+        "jobTitle": "Software Developer",
+        "url": "https://shreedhar.dev/",
+        "image": "https://shreedhar.dev/assets/images/avatar.jpeg",
+        "worksFor": {"@type": "Organization", "name": "Paper Bank Solutions"},
+        "sameAs": [
+            "https://github.com/shreedhar01",
+            "https://www.linkedin.com/in/shreedhar-kala-magar-7a66b424b"
+        ]
+    }
+    </script>
 </head>
 <body>
-    <!-- Progress bar -->
-    <div class="scroll-progress" id="scroll-progress"></div>
-
-    <!-- Navigation -->
-    <header class="nav" id="nav">
-        <div class="nav-container">
-            <a href="#home" class="nav-brand">
-                <!-- <span class="nav-brand-mark">S</span> -->
-                <span class="nav-brand-name">Shreedhar</span>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="shell header-inner">
+            <a class="brand" href="#home">
+                <span class="monogram" aria-hidden="true">SK</span>
+                <span>Shreedhar</span>
             </a>
-
-            <nav class="nav-links" id="nav-links" aria-label="Primary">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#shroudchat" class="nav-link">ShroudChat</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
+            <nav class="navigation" aria-label="Main">
+                <a href="#projects">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </nav>
-
-            <div class="nav-actions">
-                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
-                    <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0-5a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1Zm0 17a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1ZM4.22 4.22a1 1 0 0 1 1.41 0l1.42 1.42a1 1 0 1 1-1.42 1.41L4.22 5.63a1 1 0 0 1 0-1.41Zm12.73 12.73a1 1 0 0 1 1.41 0l1.42 1.42a1 1 0 0 1-1.42 1.41l-1.41-1.41a1 1 0 0 1 0-1.42ZM2 12a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm17 0a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2h-2a1 1 0 0 1-1-1ZM4.22 19.78a1 1 0 0 1 0-1.41l1.42-1.42a1 1 0 0 1 1.41 1.41l-1.41 1.42a1 1 0 0 1-1.42 0ZM16.95 7.05a1 1 0 0 1 0-1.41l1.41-1.42a1 1 0 1 1 1.42 1.42l-1.42 1.41a1 1 0 0 1-1.41 0Z"></path></svg>
-                    <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path></svg>
-                </button>
-                <a href="https://github.com/shreedhar01" class="btn btn-sm btn-ghost nav-cta" target="_blank" rel="noopener">GitHub</a>
-                <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
+            <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Dark theme" hidden>
+                <span class="theme-icon" aria-hidden="true"></span>
+            </button>
         </div>
     </header>
 
-    <main>
-        <!-- Hero -->
-        <section class="hero" id="home">
-            <div class="container hero-inner">
-                <div class="hero-content reveal">
-                    <span class="eyebrow">
-                        <span class="status-dot" aria-hidden="true"></span>
-                        Software Developer
-                    </span>
-                    <h1 class="hero-title">Hi, I'm Shreedhar.</h1>
-                    <p class="hero-subtitle">
-                        I work full-time as a <strong>Software Developer</strong> at
-                        <strong>Paper Bank Solution</strong>, and in my free time I'm building
-                        <a href="https://shroudchat.com" target="_blank" rel="noopener" class="inline-link">ShroudChat</a> —
-                        my personal product: a privacy-first AI chat app that runs entirely on your device.
-                        No servers, no accounts, no tracking.
-                    </p>
-                    <div class="hero-cta">
-                        <a href="#shroudchat" class="btn btn-primary">Explore ShroudChat</a>
-                        <a href="#projects" class="btn btn-ghost">View my work</a>
-                    </div>
-                    <div class="hero-meta">
-                        <span class="meta-chip">
-                            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path></svg>
-                            Currently: Software Developer @ Paper Bank Solution
-                        </span>
-                        <span class="meta-chip">
-                            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM1.5 8a6.5 6.5 0 0 1 11.48-4.18L3.82 12.98A6.47 6.47 0 0 1 1.5 8Z"></path></svg>
-                            Side project: ShroudChat
-                        </span>
-                    </div>
-                </div>
-                <div class="hero-visual reveal" aria-hidden="true">
-                    <div class="avatar-orb">
-                        <img src="assets/images/avatar.jpeg" alt="Shreedhar" class="avatar-img">
-                        <span class="orb-glow"></span>
-                        <div class="sparks" id="sparks" aria-hidden="true"></div>
-                    </div>
-                    <pre class="code-card" aria-hidden="true"><code><span class="c-key">const</span> dev = {
-  <span class="c-prop">name</span>: <span class="c-str">'Shreedhar'</span>,
-  <span class="c-prop">role</span>: <span class="c-str">'Software Developer'</span>,
-  <span class="c-prop">employer</span>: <span class="c-str">'Paper Bank Solution'</span>,
-  <span class="c-prop">sideProject</span>: <span class="c-str">'ShroudChat'</span>,
-  <span class="c-prop">focus</span>: <span class="c-str">'privacy · on-device AI'</span>,
-};</code></pre>
+    <main id="main" tabindex="-1">
+        <section class="shell hero" id="home" aria-labelledby="intro-title">
+            <div class="hero-copy">
+                <p class="eyebrow">Software developer <span aria-hidden="true">/</span> Nepal</p>
+                <h1 id="intro-title">Shreedhar<br><span>Kala Magar</span></h1>
+                <p class="hero-intro">I build full-stack mobile apps and AI that runs directly on your device.</p>
+                <div class="actions">
+                    <a class="button button-primary" href="#projects">Explore my work</a>
+                    <a class="button button-outline" href="#contact">Get in touch</a>
                 </div>
             </div>
-            <a href="#about" class="scroll-cue" aria-label="Scroll to about">
-                <span></span>
-            </a>
-        </section>
-
-        <!-- About -->
-        <section class="section" id="about">
-            <div class="container">
-                <div class="section-head reveal">
-                    <span class="section-kicker">01 — About</span>
-                    <h2 class="section-title">A developer who ships end&#8209;to&#8209;end.</h2>
-                </div>
-                <div class="about-grid">
-                    <div class="about-text reveal">
-                        <p>
-                            I work full-time as a <strong>Software Developer</strong> at
-                            <strong>Paper Bank Solution</strong>, designing and building software from the ground up —
-                            across the stack, from architecture and APIs to polished UI.
-                        </p>
-                        <p>
-                            Outside of work, I build <a href="https://shroudchat.com" target="_blank" rel="noopener" class="inline-link">ShroudChat</a> —
-                            my personal side project: a privacy-first AI chat app that runs entirely on-device.
-                            I care about software that respects its users: fast, private by design, and free of surveillance.
-                        </p>
-                        <p>
-                            I enjoy turning hard problems into clean, reliable systems and shipping things people
-                            actually want to use.
-                        </p>
-                    </div>
-                    <div class="about-side reveal">
-                        <div class="skills-card">
-                            <h3 class="skills-title">Work stack · Paper Bank Solution</h3>
-                            <div class="skills">
-                                <span class="skill">Next.js</span>
-                                <span class="skill">NestJS</span>
-                                <span class="skill">Express</span>
-                                <span class="skill">Expo</span>
-                                <span class="skill">PostgreSQL</span>
-                                <span class="skill">TypeScript</span>
-                            </div>
-                        </div>
-                        <div class="skills-card">
-                            <h3 class="skills-title">Side project · ShroudChat</h3>
-                            <div class="skills">
-                                <span class="skill">Kotlin</span>
-                                <span class="skill">Swift</span>
-                                <span class="skill">C++</span>
-                                <span class="skill">JS/TS</span>
-                                <span class="skill">On-device AI</span>
-                                <span class="skill">Android</span>
-                            </div>
-                        </div>
-                        <div class="stats-row">
-                            <div class="stat">
-                                <span class="stat-num" id="repo-count">—</span>
-                                <span class="stat-label">Public repos</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-num">1</span>
-                                <span class="stat-label">Product in flight</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="portrait-frame">
+                <img class="portrait" src="assets/images/avatar.jpeg" width="400" height="400" alt="Portrait of Shreedhar Kala Magar" fetchpriority="high">
+                <span class="portrait-guide" aria-hidden="true"></span>
             </div>
         </section>
 
-        <!-- Featured: ShroudChat -->
-        <section class="section section-featured" id="shroudchat">
-            <div class="container">
-                <div class="section-head reveal">
-                    <span class="section-kicker">02 — Personal Side Project</span>
-                    <h2 class="section-title">ShroudChat</h2>
-                    <p class="section-lead">Private AI. On your device. Yours alone.</p>
+        <section class="work-section" id="projects" aria-labelledby="work-title">
+            <div class="shell">
+                <div class="section-heading">
+                    <h2 id="work-title">Selected work</h2>
+                    <a class="text-link" href="https://github.com/shreedhar01">GitHub profile</a>
                 </div>
 
-                <article class="product-card reveal">
-                    <div class="product-main">
-                        <div class="product-brand">
-                            <div class="product-logo" aria-hidden="true">S</div>
-                            <div>
-                                <h3 class="product-name">ShroudChat</h3>
-                                <p class="product-tag">Privacy-focused AI chat · 100% on-device</p>
-                            </div>
-                            <span class="badge badge-building">In the building stage</span>
-                        </div>
-
-                        <p class="product-desc">
-                            ShroudChat is a privacy-focused AI chat app that runs entirely on your phone.
-                            <strong>No servers, no accounts, no tracking</strong> — your conversations never leave your device.
-                            The AI model runs locally, so replies are instant and work even offline.
-                        </p>
-
-                        <div class="product-features">
-                            <div class="feature">
-                                <span class="feature-ico" aria-hidden="true">⚡</span>
-                                <h4>Local on-device AI</h4>
-                                <p>A capable language model runs right on your device for instant replies — nothing sent to the cloud.</p>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-ico" aria-hidden="true">🔒</span>
-                                <h4>No account needed</h4>
-                                <p>Open the app and start chatting. No sign-up, no phone number, no email. Your identity stays yours.</p>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-ico" aria-hidden="true">✈️</span>
-                                <h4>Truly offline</h4>
-                                <p>No internet? No problem. Everything runs on-device, so it works on a plane, on a mountain, anywhere.</p>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-ico" aria-hidden="true">🛡️</span>
-                                <h4>Private by design</h4>
-                                <p>Conversations live only on your device. Delete them and they're gone — for good. Nothing is ever uploaded.</p>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-ico" aria-hidden="true">🔇</span>
-                                <h4>No telemetry</h4>
-                                <p>Zero analytics, zero tracking SDKs, zero behavioral profiling. We don't watch what you type — we can't.</p>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-ico" aria-hidden="true">🚀</span>
-                                <h4>Fast &amp; responsive</h4>
-                                <p>Because the model lives on your device, responses are instant — no network round-trips, no waiting on a server.</p>
-                            </div>
-                        </div>
-
-                        <div class="product-stats">
-                            <div class="pstat"><span class="pstat-num">0</span><span class="pstat-label">bytes sent to servers</span></div>
-                            <div class="pstat"><span class="pstat-num">0</span><span class="pstat-label">accounts required</span></div>
-                            <div class="pstat"><span class="pstat-num">100%</span><span class="pstat-label">on-device</span></div>
-                        </div>
-
-                        <div class="product-cta">
-                            <a href="https://shroudchat.com" target="_blank" rel="noopener" class="btn btn-primary">Visit shroudchat.com</a>
-                            <span class="platform-note">Coming soon to Google Play · Android</span>
+                <article class="featured" id="shroudchat">
+                    <div class="featured-copy">
+                        <p class="eyebrow">Personal product <span aria-hidden="true">/</span> Android</p>
+                        <h3>ShroudChat</h3>
+                        <p>An AI chat app that works offline after the model downloads. Responses, conversation summaries, and chat history stay on the phone.</p>
+                        <ul class="tags" aria-label="ShroudChat technologies">
+                            <li>React Native</li>
+                            <li>LiteRT-LM</li>
+                            <li>llama.cpp</li>
+                            <li>SQLite</li>
+                        </ul>
+                        <div class="actions">
+                            <a class="button button-primary" href="https://play.google.com/store/apps/details?id=com.shreedhar01.shroudchat">Google Play</a>
+                            <a class="text-link" href="https://shroudchat.com/">Project site</a>
                         </div>
                     </div>
-
-                    <aside class="product-mockup reveal" aria-hidden="true">
-                        <div class="phone">
-                            <div class="phone-notch"></div>
-                            <div class="phone-screen">
-                                <div class="phone-header">
-                                    <span class="phone-title">ShroudChat</span>
-                                    <span class="phone-sub">On-device · private</span>
-                                </div>
-                                <div class="phone-chat">
-                                    <div class="bubble bubble-in">Hey! Is my data really staying on my phone?</div>
-                                    <div class="bubble bubble-out">Yes — I run fully on-device. Nothing is sent to any server.</div>
-                                    <div class="bubble bubble-in">So no tracking at all?</div>
-                                    <div class="bubble bubble-out">No accounts, no analytics, no cloud. Your words never leave this device.</div>
-                                </div>
-                                <div class="phone-input">Type a message…</div>
-                            </div>
-                        </div>
-                    </aside>
+                    <div class="featured-visual">
+                        <img class="app-shot app-shot-chat" src="assets/images/shroudchat-offline.webp" width="720" height="1280" alt="ShroudChat’s Android chat screen with quick-start prompts" loading="lazy">
+                        <img class="app-shot app-shot-models" src="assets/images/shroudchat-models.webp" width="720" height="1280" alt="ShroudChat’s on-device model browser with downloadable models" loading="lazy">
+                    </div>
                 </article>
-            </div>
-        </section>
 
-        <!-- Projects -->
-        <section class="section" id="projects">
-            <div class="container">
-                <div class="section-head reveal">
-                    <span class="section-kicker">03 — Projects</span>
-                    <h2 class="section-title">Selected work</h2>
-                </div>
-                <div class="project-grid">
-                    <a href="https://github.com/shreedhar01/portfolio-in-npm-registry" target="_blank" rel="noopener" class="project-card reveal">
-                        <div class="project-top">
-                            <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.5 2.5 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.7A2.49 2.49 0 0 1 4.5 9h8Z"></path></svg>
-                            <span class="project-name">portfolio-in-npm</span>
-                            <span class="project-vis">Public</span>
-                        </div>
-                        <p class="project-desc">CLI portfolio published to the NPM registry.</p>
-                        <div class="project-foot"><span class="lang-dot" style="background:#3178c6"></span>TypeScript</div>
-                    </a>
-                    <a href="https://github.com/shreedhar01/backend" target="_blank" rel="noopener" class="project-card reveal">
-                        <div class="project-top">
-                            <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.5 2.5 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.7A2.49 2.49 0 0 1 4.5 9h8Z"></path></svg>
-                            <span class="project-name">backend</span>
-                            <span class="project-vis">Public</span>
-                        </div>
-                        <p class="project-desc">Backend services and API implementation.</p>
-                        <div class="project-foot"><span class="lang-dot" style="background:#f1e05a"></span>JavaScript</div>
-                    </a>
-                    <a href="https://github.com/shreedhar01/genome-biothon-hackthon" target="_blank" rel="noopener" class="project-card reveal">
-                        <div class="project-top">
-                            <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.5 2.5 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.7A2.49 2.49 0 0 1 4.5 9h8Z"></path></svg>
-                            <span class="project-name">genome-biothon</span>
-                            <span class="project-vis">Public</span>
-                        </div>
-                        <p class="project-desc">Hackathon project for biological data analysis.</p>
-                        <div class="project-foot"><span class="lang-dot" style="background:#3178c6"></span>TypeScript</div>
-                    </a>
-                </div>
-                <div class="projects-more reveal">
-                    <a href="https://github.com/shreedhar01" target="_blank" rel="noopener" class="btn btn-ghost">See all on GitHub →</a>
+                <div class="work-grid">
+                    <article class="work-card">
+                        <p class="eyebrow">Professional project</p>
+                        <h3>Joyo</h3>
+                        <p>Built a vendor marketplace, real-time chat and game features, and video galleries for a wedding management app.</p>
+                        <ul class="tags" aria-label="Joyo technologies">
+                            <li>Expo</li>
+                            <li>Express</li>
+                            <li>PostgreSQL</li>
+                            <li>Socket.IO</li>
+                        </ul>
+                    </article>
+                    <article class="work-card">
+                        <p class="eyebrow">Open source</p>
+                        <h3>React Native LiteRT-LM</h3>
+                        <p>Fixed Android token generation so it stops before a conversation resets or closes. The fix merged upstream.</p>
+                        <a class="text-link" href="https://github.com/hung-yueh/react-native-litert-lm/pull/26">Read the pull request</a>
+                    </article>
+                    <article class="work-card">
+                        <p class="eyebrow">Developer tooling</p>
+                        <h3>Project Bootstrap</h3>
+                        <p>Built a TypeScript CLI that scaffolds a starter project from the terminal.</p>
+                        <a class="text-link" href="https://github.com/shreedhar01/project-bootstrap">View the source</a>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- Contact -->
-        <section class="section section-contact" id="contact">
-            <div class="container contact-inner reveal">
-                <span class="section-kicker">04 — Contact</span>
-                <h2 class="section-title">Let's build something.</h2>
-                <p class="contact-lead">
-                    I'm a software developer always happy to talk about products, privacy, and clean engineering.
-                    Whether it's a project, a collaboration, or just a hello — my inbox is open.
-                </p>
-                <div class="contact-cta">
-                    <a href="https://github.com/shreedhar01" target="_blank" rel="noopener" class="btn btn-primary">GitHub</a>
-                    <a href="https://www.linkedin.com/in/shreedhar-kala-magar-7a66b424b" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
-                </div>
+        <section class="shell about-section" id="about" aria-labelledby="about-title">
+            <div class="about-copy">
+                <h2 id="about-title">About me</h2>
+                <p>I’m a software developer at Paper Bank Solutions. My work spans mobile interfaces, APIs, data models, and real-time services. Outside of work, I develop ShroudChat and explore how to run language models within the memory and storage limits of a phone.</p>
+                <dl class="stack">
+                    <div><dt>Mobile</dt><dd>TypeScript, React Native, Expo</dd></div>
+                    <div><dt>Backend</dt><dd>Node.js, Express, NestJS, PostgreSQL</dd></div>
+                    <div><dt>On-device AI</dt><dd>LiteRT-LM, llama.cpp, Gemma</dd></div>
+                </dl>
+            </div>
+            <div class="experience" id="experience">
+                <h3>Experience &amp; education</h3>
+                <ul>
+                    <li>
+                        <p class="date">Feb 2026 – Present</p>
+                        <h4>Software Developer</h4>
+                        <p>Paper Bank Solutions</p>
+                    </li>
+                    <li>
+                        <p class="date">Dec 2025 – Feb 2026</p>
+                        <h4>Software Developer Intern</h4>
+                        <p>Paper Bank Solutions</p>
+                    </li>
+                    <li>
+                        <p class="date">2022–2026</p>
+                        <h4>Kantipur Engineering College</h4>
+                        <p>B.E. in Electronics, Communication and Information Engineering</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="shell contact-section" id="contact" aria-labelledby="contact-title">
+            <div>
+                <h2 id="contact-title">Let’s get in touch.</h2>
+                <a class="email-link" href="mailto:shreedharkalamagar@gmail.com">shreedharkalamagar@gmail.com</a>
+            </div>
+            <div class="actions">
+                <a class="button button-contact" href="https://www.linkedin.com/in/shreedhar-kala-magar-7a66b424b">LinkedIn</a>
+                <a class="button button-contact" href="https://github.com/shreedhar01">GitHub</a>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container footer-inner">
-            <span>© <span id="year"></span> Shreedhar</span>
-            <span class="footer-sub">Built with vanilla HTML, CSS &amp; JS · Hosted on GitHub Pages</span>
-        </div>
+    <footer class="shell site-footer">
+        <span>Shreedhar Kala Magar</span>
+        <a class="text-link" href="#home">Back to top</a>
     </footer>
-
-    <script src="src/js/app.js"></script>
 </body>
 </html>
